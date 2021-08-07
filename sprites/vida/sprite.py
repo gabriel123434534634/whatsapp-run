@@ -71,7 +71,6 @@ class sprite:
         if self.vida <= 0:
             data = {"vida": 3, "pontos":0}
             json.dump(data, open("data.dat", "w", encoding="utf-8"), ensure_ascii=False)
-            exit()
         if self.vida > 3:
             data = {"vida": 3, "pontos":pontos}
             json.dump(data, open("data.dat", "w", encoding="utf-8"), ensure_ascii=False)
